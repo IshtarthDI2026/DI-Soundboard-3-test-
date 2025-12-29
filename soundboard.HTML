@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kid Music Soundboard</title>
+<style>
+body {
+  background:#121212;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+}
+button {
+  padding:12px 20px;
+  margin:6px;
+  font-size:16px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+}
+button:hover { background:#ffd54f; }
+</style>
+</head>
+
+<body>
+<h1>🎵 Kid Music Soundboard</h1>
+<p>Click a button to play!</p>
+
+<button onclick="play(0)">Over the Rainbow</button>
+<button onclick="play(1)">Jurassic Park</button>
+<button onclick="play(2)">Happy</button>
+<button onclick="play(3)">Pure Imagination</button>
+<button onclick="play(4)">Everything Is Awesome</button>
+<button onclick="play(5)">Grinch</button>
+<button onclick="play(6)">Once Upon a December</button>
+<button onclick="play(7)">Can't Stop the Feeling</button>
+<button onclick="play(8)">Let It Grow</button>
+<button onclick="play(9)">Titanic</button>
+<button onclick="play(10)">Sodapop</button>
+<button onclick="play(11)">This Is Halloween</button>
+<button onclick="play(12)">Rick Roll</button>
+<button onclick="play(13)">Gummy Bear</button>
+
+<script>
+const sounds = [
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="),
+  new Audio("data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=")
+];
+
+function play(i) {
+  sounds[i].currentTime = 0;
+  sounds[i].play();
+}
+</script>
+
+</body>
+</html>
